@@ -9,23 +9,23 @@ This python script has the following functionalities:
 The steps that must be taken to set up this script are as follows:
 
 - Clone the GitHub repository (preferably into */home/"user"/projects/*)
-```
-[mkdir -p ~/projects/xrate/]
-git clone git@github.com:mohelhelb/xrate.git [~/projects/xrate/]
-```
+	```
+	[mkdir ~/projects/]
+	git clone git@github.com:mohelhelb/xrate.git [~/projects/xrate/]
+	```	
 - Isolate the project by creating a virtual environment.
-```
-pip install virtualenv
-virtualenv ~/projects/xrate/venv/
-source ~/projects/xrate/venv/bin/activate
-```
-- Install the project's dependencies (See *requirements.txt* file).
-```
-pip install -r ~/projects/xrate/requirements.txt
-```
+	```
+	pip install virtualenv
+	virtualenv ~/projects/xrate/venv/
+	source ~/projects/xrate/venv/bin/activate
+	```
+- Install the project's dependencies (See the *requirements.txt* file).
+	```
+	pip install -r ~/projects/xrate/requirements.txt
+	```
 - Modify the *xrate_file* variable (`xrate_file=f"xrates_{tday}.csv"`) in the *websraper.py* script accordingly.
 - Execute the python script.
-```
-[sudo chmod u+x,g+x,o+x ~/projects/xrate/webscraper.py]
-python ~/projects/xrate/webscraper.py
-```
+	```
+	[sudo chmod a+x ~/projects/xrate/webscraper.py]
+	python ~/projects/xrate/webscraper.py
+	```
